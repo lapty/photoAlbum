@@ -7,7 +7,7 @@ body {
 header, footer {
   display: inline-block;
   width: 100%;
-  padding: 20px;
+  padding: 0px;
   margin-bottom: 20px;
   color: white; }
 
@@ -44,7 +44,6 @@ nav ul {
 
 nav ul > li {
   display: inline-block;
-  background-color: black;
   padding: 0px; }
 
 nav ul a {
@@ -60,20 +59,23 @@ nav ul a:hover {
 .pageOne, .pageTwo, .pageThree {
   display: none;
   color: white;
-  text-align: center; }
+  text-align: center;
+  padding: 0px;
+  margin: 20px;
+  border: 5px white double; }
 
 .currentPage {
   display: block; }
 
 img {
-  transition: box-shadow 0.5s ease-in; }
+  transition: box-shadow 0.25s ease-in; }
 
 img:hover {
-  box-shadow: white 2px 2px; }
+  box-shadow: 0 0 3em white; }
 
 .pageOne img, .pageTwo img, .pageThree img {
-  height: 300px;
-  width: 300px; }
+  height: 290px;
+  width: 290px; }
 
 img.getBig {
   width: 60%;
@@ -84,6 +86,8 @@ img.getBig {
   display: none; }
 
 @media all and (max-width: 640px) {
+  .pageOne, .pageTwo, .pageThree {
+    margin: 0px; }
   .pageOne img, .pageTwo img, .pageThree img {
     width: 50%;
     height: 50%; }
