@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     event.preventDefault();
     var $getBig = $(this);
-    $getBig.parent("a").siblings().toggleClass("hide");
+    $getBig.parent("a").siblings().children().toggleClass("hide");
     $getBig.toggleClass("getBig");
 
   });
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     event.preventDefault();
     var $getBig = $(this);
-    $getBig.parent("a").siblings().toggleClass("hide");
+    $getBig.parent("a").siblings().children().toggleClass("hide");
     $getBig.toggleClass("getBig");
 
   });
@@ -37,7 +37,7 @@ $(document).ready(function() {
 
   event.preventDefault();
   var $getBig = $(this);
-  $getBig.parent("a").siblings().toggleClass("hide");
+  $getBig.parent("a").siblings().children().toggleClass("hide");
   $getBig.toggleClass("getBig");
 });
 

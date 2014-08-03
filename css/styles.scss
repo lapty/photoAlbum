@@ -1,37 +1,38 @@
 body {
   margin: 0;
   padding: 0;
-  background-color:black;
-  font-family:"futura";
+  background-color:white;
+  font-family: "helvetica";
+  letter-spacing:10px;
 }
 header, footer {
   display:inline-block;
   width:100%;
   padding:0px;
   margin-bottom: 20px;
-  color: white;
+  color: #4d4d4d;
 }
 
-.headTitle {
-  text-decoration:underline;
-}
 
 .headTitle:hover {
-  background-image:url("../images/stripes2.png");
   cursor:pointer;
+  background-image:url("../images/stripes.png");
 
 }
 
 h1 {
   text-align:center;
+  width:190px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 header a {
-  color: black;
+  color: #4d4d4d;
   text-decoration: none;
 }
 header a:hover {
-  color: black;
+  color: white;
   text-decoration: underline;
 
 }
@@ -43,7 +44,7 @@ nav img {
 
 nav ul {
   display:inline-block;
-  background-image:url("../images/stripes.png");
+  background-image:url("../images/greenstripes2.png");
   width:100%;
   margin: 0;
   padding: 0;
@@ -57,7 +58,7 @@ nav ul > li {
 }
 
 nav ul a {
-  color: white;
+  color: #4d4d4d;
   text-decoration: none;
   width:200px;
   height:200px;
@@ -65,20 +66,20 @@ nav ul a {
 
 
 nav ul a:hover {
-  color: white;
+  color: #4d4d4d;
   text-decoration: underline;
 }
 
 .pageOne, .pageTwo, .pageThree {
   display:none;
-  color:white;
+  color:#4d4d4d;
   text-align:center;
   padding:0px;
   margin:20px;
-  border:5px white double;
 }
 .currentPage {
   display: block;
+  border-top: 10px #4d4d4d double;
 }
 
 img {
@@ -87,12 +88,13 @@ img {
 }
 
 img:hover {
-  box-shadow:0 0 3em white;
+  box-shadow:0 0 0em .5em #71EEB8;
 }
 
 .pageOne img, .pageTwo img, .pageThree img{
-  height:290px;
+  height:240px;
   width:290px;
+  margin-top:10px;
 }
 
 img.getBig {
