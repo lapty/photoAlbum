@@ -1,14 +1,15 @@
 $(document).ready(function() {
 
 //Changing albums, staying on same page.
-  $("nav a").click(function(event) {
+  $("nav a, .headTitle").click(function(event) {
 
     event.preventDefault();
     var stayonPage = "." + $(this).attr("rel");
     console.log(stayonPage);
 
     $(".container").children().removeClass("currentPage");
-    $(".pageOne img, .pageTwo img, .pageThree img").removeClass("getBig hide");
+    //removes getBig and hide classes after clicking on new album
+    $(".pageOne img, .pageTwo img, .pageThree img, h1").removeClass("getBig hide");
     $(stayonPage).addClass("currentPage");
 
 
@@ -18,7 +19,7 @@ $(document).ready(function() {
 
     event.preventDefault();
     var $getBig = $(this);
-    $getBig.parent("a").siblings().children().toggleClass("hide");
+    $getBig.parent("a").siblings().toggleClass("hide");
     $getBig.toggleClass("getBig");
 
   });
@@ -27,7 +28,7 @@ $(document).ready(function() {
 
     event.preventDefault();
     var $getBig = $(this);
-    $getBig.parent("a").siblings().children().toggleClass("hide");
+    $getBig.parent("a").siblings().toggleClass("hide");
     $getBig.toggleClass("getBig");
 
   });
@@ -36,7 +37,7 @@ $(document).ready(function() {
 
   event.preventDefault();
   var $getBig = $(this);
-  $getBig.parent("a").siblings().children().toggleClass("hide");
+  $getBig.parent("a").siblings().toggleClass("hide");
   $getBig.toggleClass("getBig");
 });
 
